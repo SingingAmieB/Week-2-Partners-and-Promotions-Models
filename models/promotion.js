@@ -30,6 +30,6 @@ const promotionSchema = new Schema ({
     timestamp: { createdAt: true, updatedAt: true }
 });
 
-const Campsite = mongoose.model('Promotion', promotionSchema);
+const Promotion = mongoose.model('Promotion', promotionSchema);
 
 module.exports = Promotion;

@@ -19,9 +19,10 @@ const partnerSchema = new Schema ({
         type: String,
         required: true
     },
-    timestamp: { createdAt: true, updatedAt: true }
-});
+},
+    { timestamp: { createdAt: true, updatedAt: true } }
+);
 
-const Campsite = mongoose.model('Partner', partnerSchema);
+const Partner = mongoose.model('Partner', partnerSchema);
 
 module.exports = Partner;

@@ -5,7 +5,7 @@ const partnerRouter = express.Router();
 
 partnerRouter.route('/')
 .get((req, res, next) => {
-    Partner.find()
+    Partner.partner.find()
     .then(partner => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
